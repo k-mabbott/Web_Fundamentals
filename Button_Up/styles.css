@@ -1,0 +1,33 @@
+* {
+    margin: 10px 10px auto;
+
+}
+
+#search {
+    color:turquoise;
+    background-color: aliceblue;
+    border: 2px solid turquoise;
+    border-radius: 20px;
+    width: 125px;
+    height: 25px;
+}
+#add {
+    background-color: rgb(77, 255, 195);
+    color:aliceblue;
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(77, 255, 195);
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    
+}
+#create-account {
+    color:aliceblue;
+    background-color: rgb(73, 73, 255);
+    border: 2px solid black;
+    box-shadow: 10px 4px 1px black;
+    width: 150px;
+    height: 30px;
+    font-size: .9em;
+}
