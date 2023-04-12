@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    height: 4rem;
+    position: absolute;
+    top: 5rem;
+    align-self:flex-start;
+    padding-left: 1.2rem;
+}
+
+.links{
+    padding-top: 0.8rem;
+}
+
+.location {
+    display: flex;
+    gap: 0.7rem;
+    padding: 8px 0px;
+}
+
+.logo {
+    height: 20px;
+}
+
+.profile-card {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.top-color {
+    background-color: rgb(66, 161, 185);
+    height: 60px;
+
+}
+
+.information {
+    border: 2px solid grey;
+    border-top: none;
+    padding:20px;
+    padding-top: 40px;
+    /* position: relative;
+    top:-60px; */
+}
