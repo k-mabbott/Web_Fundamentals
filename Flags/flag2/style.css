@@ -1,0 +1,24 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.flag {
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* border: 1px solid lightgray; */
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.red {
+    background-color: #d60717;
+    width: 33%;
+}
+
+.blue {
+    background-color: #080862;
+    width: 33%;
+}

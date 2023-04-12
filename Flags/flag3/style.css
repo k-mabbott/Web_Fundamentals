@@ -1,0 +1,32 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.flag {
+    background-color: #edb300;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top {
+    background-color: #a41418;
+    height: 25%;
+    width: 100%;
+    
+}
+
+.bottom {
+    background-color: #a41418;
+    height: 25%;
+    width: 100%;
+}
+img {
+    height: 150px;
+    width: 150px;
+    margin-left: 100px;
+    background-color: #edb300;
+}
