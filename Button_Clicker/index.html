@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="flex align pad">
+        <h2>Dojonary</h2>
+        <input type="text" placeholder="Search" class="border" >
+        <button type="button" onclick="logout(this)" class="border" >Login</button>
+    </nav>
+    <main class="flex gap">
+        <div id="left" class="flex col gap">
+            <div class="flex border pad gap">
+                <div class="center">
+                    <h2>ninja</h2>
+                    <p><span class="italic">noun</span></p>
+                    <p>Plural : <span class="italic">ninjas</span></p>
+                    <button type="button" onclick="alert('Ninja was liked')" class="border pad likes">13 Likes</button>
+                </div>
+                <div class="flex align">
+                    <p>A practitioner skilled in the <a href="https://en.wikipedia.org/wiki/Japanese">Japanese</a> 
+                        art of <a href="https://en.wikipedia.org/wiki/Ninjutsu">ninjitsu</a>
+                    </p>
+                </div>
+            </div>
+            <div class="flex border pad gap">
+                <div class="center">
+                    <h2>ninja</h2>
+                    <p><span class="italic">noun</span></p>
+                    <p>Plural : <span class="italic">ninjas</span></p>
+                    <button type="button" onclick="" class="border pad likes" >37 Likes</button>
+                </div>
+                <div class="flex align">
+                    <p>A <a href="https://en.wikipedia.org/wiki/Programmer">programmer</a> 
+                        who breaks down problems with 
+                        <a href="https://en.wikipedia.org/wiki/Zen">zen</a>-like focus
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="right" class="flex col gap">
+            <div class="border pad" id="dojonary">
+                <h3>Dojonary is defined by <span class="bold">YOU</span></h3>
+                <button type="button" onclick="remove(this)" class="likes border pad" id="add" >Add Definition</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js" ></script>
+</body>
+</html>

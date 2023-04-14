@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Plus+Jakarta+Sans&family=Roboto&display=swap');
+
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+    font-family: 'Nunito', sans-serif;
+	}
+
+/* --------------Generic------------ */
+.flex{
+    display: flex;
+}
+.align{
+    align-items: center;
+}
+.col {
+    flex-direction: column;
+}
+.border {
+    border: 2px solid black;
+}
+.pad {
+    padding: 0.5rem 1rem;
+}
+.italic {
+    font-style: italic;
+}
+.bold{
+    font-weight: bold;
+}
+.gap {
+    gap: 1.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+
+.likes {
+    background-color: #e6c257;
+    box-shadow: 3px 3px black;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+    min-width: 100px;
+}
+.center {
+    text-align: center;
+}
+a {
+    color: blue;
+}
+/* ----------------Body----------------- */
+body{
+    padding: 0 10%; 
+}
+
+/* ---------------NAV------------------- */
+nav {
+    background-color: #cccccc;
+    justify-content: space-between;
+}
+nav input {
+    width: 50%;
+}
+nav button {
+    background-color: #2b78e4;
+    padding: 0rem 0.6rem;
+    color: whitesmoke;
+    box-shadow: 3px 3px black;
+}
+
+/* --------------Main------------- */
+main {
+    padding-top: 1.5rem;
+}
+
+/* ---------------Left------------ */
+#left {
+    flex: 2;
+}
+
+/* --------------Right------------ */
+#right {
+    flex: 1;
+}
+#add {
+    background-color: #93c47d;
+    width: 100%;
+}
+#dojonary {
+    height: 150px;
+}
