@@ -40,9 +40,13 @@
 }
 h2 {
     font-size: 2rem;
+    font-weight: 600;
 }
 h3{
     font-size: 1.8rem;
+}
+button:hover {
+    cursor: pointer;
 }
 
 .likes {
@@ -63,7 +67,7 @@ body{
     padding: 0 10%; 
 }
 
-/* ---------------NAV------------------- */
+/* ---------------Nav------------------- */
 nav {
     background-color: #cccccc;
     justify-content: space-between;
