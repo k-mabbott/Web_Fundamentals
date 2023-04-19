@@ -12,7 +12,9 @@
 	margin: 0;
     font-family: 'Nunito', sans-serif;
 	}
-
+/* :root{
+    font-size: 12px;
+} */
 /* --------------Generic------------ */
 .flex{
     display: flex;
@@ -73,7 +75,7 @@ nav {
     justify-content: space-between;
 }
 nav input {
-    width: 50%;
+    /* width: 50%; */
 }
 nav button {
     background-color: #2b78e4;
@@ -100,6 +102,6 @@ main {
     background-color: #93c47d;
     width: 100%;
 }
-#dojonary {
-    height: 150px;
-}
+/* #dojonary {
+    height: fit-content;
+} */
