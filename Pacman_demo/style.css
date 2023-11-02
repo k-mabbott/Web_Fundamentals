@@ -69,3 +69,9 @@ body {
     display: flex;
     gap: 1rem
 }
+button {
+    margin: 2rem 2rem;
+}
+h3{
+    margin: 2.5rem 0;
+}

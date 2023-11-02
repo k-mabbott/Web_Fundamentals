@@ -58,6 +58,7 @@ function displayWorld (){
 function displayPacman(){
     document.getElementById('pacman').style.left = pacman.x*20+'px';
     document.getElementById('pacman').style.top = pacman.y*24+'px';
+    
 }
 function displayGhost(){
     document.getElementById('ghost').style.left = ghost.x*20+'px';
@@ -69,33 +70,43 @@ function displayScore(){
 }
 
 function displayGameOver(){
-    document.getElementById('game').innerHTML = `<button onclick="window.location.reload()">restart</button><div> Your Score Was ${score} </div>`
+    document.getElementById('game').innerHTML = `<button onclick="window.location.reload()">restart</button><h3> Your Score Was ${score} </h3>`
+}
+
+function startGame(){
+    document.getElementById('game').innerHTML =`<div id="world"></div>
+                                                <div id="pacman"></div>
+                                                <div id="ghost"></div>
+                                                <div id="score">0</div>`
+    displayWorld()
+    displayPacman()
+    displayGhost()
+    setInterval(moveGhost, 400)
 }
 
 
 function moveGhost(){
     if (ghost.y < pacman.y && world[ghost.y+1][ghost.x] != 2){
-        displayGhost()
         ghost.y++
+        displayGhost()
     }
     else if (ghost.x < pacman.x && world[ghost.y][ghost.x+1] != 2){
-        displayGhost()
         ghost.x++
+        displayGhost()
     }
     else if (ghost.y > pacman.y && world[ghost.y-1][ghost.x] != 2 ){
-        displayGhost()
         ghost.y--
+        displayGhost()
     }
     else if (ghost.x > pacman.x && world[ghost.y][ghost.x-1] != 2){
-        displayGhost()
         ghost.x--
+        displayGhost()
+    }
+    if(pacman.y === ghost.y && pacman.x === ghost.x){
+        displayGameOver()
     }
 }
 
-displayWorld()
-displayPacman()
-displayGhost()
-setInterval(moveGhost, 400)
 
 document.onkeydown = function(e){
     if (e.keyCode == 40 && world[pacman.y+1][pacman.x] != 2){
@@ -118,7 +129,6 @@ document.onkeydown = function(e){
         pacman.x--
         displayPacman()
     }
-
     if(world[pacman.y][pacman.x] == 1){
         world[pacman.y][pacman.x] = 0;
         score += 10
@@ -131,10 +141,8 @@ document.onkeydown = function(e){
         displayWorld()
         displayScore()
     }
-    if(world[pacman.y][pacman.x] === world[ghost.y][ghost.x]){
-        displayGameOver()
-    }
-
     displayPacman()
+
     console.log(e.keyCode)
 }
+
