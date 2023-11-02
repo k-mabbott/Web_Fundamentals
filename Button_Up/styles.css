@@ -20,8 +20,17 @@
     border-radius: 15px;
     font-size: 1.2em;
     font-weight: bold;
+    transition: .5s ease-in-out;
+
     
 }
+
+#add:hover {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
 #create-account {
     color:aliceblue;
     background-color: rgb(73, 73, 255);
@@ -30,4 +39,17 @@
     width: 150px;
     height: 30px;
     font-size: .9em;
+    transition: .5s ease-in-out;
+}
+#create-account:hover {
+    color:aliceblue;
+    background-color: rgb(96, 96, 255);
+    border: 2px solid black;
+    box-shadow: 12px 5px 2px black;
+    width: 160px;
+    height: 35px;
+    font-size: 1em;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
 }
