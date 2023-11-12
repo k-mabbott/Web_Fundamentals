@@ -53,3 +53,25 @@
     cursor: pointer;
 
 }
+
+
+
+#rounded {
+    background-color: cornflowerblue;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: .1px 5px 3px 1px rgb(0, 0, 0);
+    transition: .3s ease-in-out;
+
+}
+#rounded:hover {
+    background-color: rgb(136, 168, 229);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: .1px 6px 4px 4px rgb(0, 0, 0);
+    transition: .3s ease-in-out;
+    scale: 1.1;
+
+}
